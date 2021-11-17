@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>예약 시스템</title>
+</head>
+<body>
+    <center>
+        선택하신 좌석은 * 입니다
+    </center>
+</body>
+</html>
+<html>
+
+            
+    <center>
+        <form action="doJoin" method="POST" class="joinForm" onsubmit="DoJoinForm__submit(this); return false;">
+                                                                                                
+            <h2>쓰이팔</h2>
+        <div class="textForm">
+        <div class="textForm">
+        <input name="name" type="text" class="name" placeholder="이름">
+        </div>
+        <div class="textForm">
+        <input name="nickname" type="number" class="nickname" placeholder="학번">
+        </div>
+        <div class="textForm">
+            <input type="tel" name="tlno" id="tlno" title="전화번호를 입력하세요." placeholder="000*-0000*-0000" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{3,4}" maxlength="13">
+
+        </div>
+        <input type="submit" class="btn" value="NEXT"/>
+        <h2>
+            <p>
+                79793155247 카카오뱅크 
+            </p>
+            예금주 : 박유빈
+        </h2>          
+    </center>
+</form> 

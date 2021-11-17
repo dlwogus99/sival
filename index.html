@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <div class="movie-container">
+      <label> Select a movie:</label>
+      <select id="movie">
+        <option value="220">Godzilla vs Kong (RS.220)</option>
+        <option value="320">Radhe (RS.320)</option>
+        <option value="250">RRR (RS.250)</option>
+        <option value="260">F9 (RS.260)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Sold</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+          <div class="row__seat_alpha" data-tooltip="empty"></div>
+          <div class="row__seat_alpha" data-tooltip="empty"></div>
+          <div class="row__seat_alpha" data-tooltip="empty"></div>
+          <div class="seat" data-tooltip="가-1"></div>
+				  <div class="seat" data-tooltip="가-2"></div>
+				  <div class="seat" data-tooltip="가-3"></div>
+				  <div class="seat" data-tooltip="가-4"></div>
+				  <div class="seat" data-tooltip="가-5"></div>
+				  <div class="seat" data-tooltip="가-6"></div>
+				  <div class="seat" data-tooltip="가-7"></div>
+				  <div class="seat" data-tooltip="가-8"></div>
+				  <div class="seat" data-tooltip="가-9"></div>
+				  <div class="seat" data-tooltip="가-10"></div>
+				  <div class="seat" data-tooltip="가-11"></div>
+				  <div class="seat" data-tooltip="가-12"></div>
+				  <div class="seat" data-tooltip="가-13"></div>
+				  <div class="seat" data-tooltip="가-14"></div>
+				  <div class="seat" data-tooltip="가-15"></div>
+				  <div class="seat" data-tooltip="가-16"></div>
+				  <div class="seat" data-tooltip="가-17"></div>
+				  <div class="seat" data-tooltip="가-18"></div>
+				  <div class="seat" data-tooltip="가-19"></div>
+				  <div class="seat" data-tooltip="가-20"></div>
+				  <div class="seat" data-tooltip="가-21"></div>
+			    <div class="seat" data-tooltip="가-22"></div>
+          <div class="row__seat_alpha" data-tooltip="empty"></div>
+          <div class="row__seat_alpha" data-tooltip="empty"></div>
+          <div class="row__seat_alpha" data-tooltip="empty"></div>
+      </div>
+
+      <div class="row">
+        <div class="row__seat_alpha" data-tooltip="empty"></div>
+				<div class="row__seat_alpha" data-tooltip="empty"></div>
+				<div class="seat" data-tooltip="나-1"></div>
+				<div class="seat" data-tooltip="나-2"></div>
+				<div class="seat" data-tooltip="나-3"></div>
+				<div class="seat" data-tooltip="나-4"></div>
+				<div class="seat" data-tooltip="나-5"></div>
+				<div class="seat" data-tooltip="나-6"></div>
+				<div class="seat" data-tooltip="나-7"></div>
+				<div class="seat" data-tooltip="나-8"></div>
+				<div class="seat" data-tooltip="나-9"></div>
+				<div class="seat" data-tooltip="나-10"></div>
+				<div class="seat" data-tooltip="나-11"></div>
+				<div class="seat" data-tooltip="나-12"></div>
+				<div class="seat" data-tooltip="나-13"></div>
+				<div class="seat" data-tooltip="나-14"></div>
+				<div class="seat" data-tooltip="나-15"></div>
+				<div class="seat" data-tooltip="나-16"></div>
+				<div class="seat" data-tooltip="나-17"></div>
+				<div class="seat" data-tooltip="나-18"></div>
+				<div class="seat" data-tooltip="나-19"></div>
+				<div class="seat" data-tooltip="나-20"></div>
+				<div class="seat" data-tooltip="나-21"></div>
+				<div class="seat" data-tooltip="나-22"></div>
+				<div class="seat" data-tooltip="나-23"></div>
+				<div class="seat" data-tooltip="나-24"></div>
+				<div class="row__seat_alpha" data-tooltip="empty"></div>
+				<div class="row__seat_alpha" data-tooltip="empty"></div>
+      </div>
+      <div class="row">
+        <div class="row__seat_alpha" data-tooltip="empty"></div>
+				<div class="row__seat_alpha" data-tooltip="empty"></div>
+				<div class="seat" data-tooltip="다-1"></div>
+        <div class="seat" data-tooltip="다-2"></div>
+        <div class="seat" data-tooltip="다-3"></div>
+        <div class="seat" data-tooltip="다-4"></div>
+        <div class="seat" data-tooltip="다-5"></div>
+        <div class="seat" data-tooltip="다-6"></div>
+        <div class="seat" data-tooltip="다-7"></div>
+			  <div class="seat" data-tooltip="다-8"></div>
+			  <div class="seat" data-tooltip="다-9"></div>
+        <div class="seat" data-tooltip="다-10"></div>
+        <div class="seat" data-tooltip="다-11"></div>
+        <div class="seat" data-tooltip="다-12"></div>
+        <div class="seat" data-tooltip="다-13"></div>
+        <div class="seat" data-tooltip="다-14"></div>
+        <div class="seat" data-tooltip="다-15"></div>
+        <div class="seat" data-tooltip="다-16"></div>
+        <div class="seat" data-tooltip="다-17"></div>
+        <div class="seat" data-tooltip="다-18"></div>
+        <div class="seat" data-tooltip="다-19"></div>
+        <div class="seat" data-tooltip="다-20"></div>
+        <div class="seat" data-tooltip="다-21"></div>
+        <div class="seat" data-tooltip="다-22"></div>
+        <div class="seat" data-tooltip="다-23"></div>
+			  <div class="seat" data-tooltip="다-24"></div>
+				<div class="row__seat_alpha" data-tooltip="empty"></div>
+				<div class="row__seat_alpha" data-tooltip="empty"></div>
+      </div>
+      <div class="row">
+        <div class="row__seat_alpha" data-tooltip="empty"></div>
+				<div class="seat" data-tooltip="라-1"></div>
+        <div class="seat" data-tooltip="라-2"></div>
+        <div class="seat" data-tooltip="라-3"></div>
+        <div class="seat" data-tooltip="라-4"></div>
+        <div class="seat" data-tooltip="라-5"></div>
+        <div class="seat" data-tooltip="라-6"></div>
+        <div class="seat" data-tooltip="라-7"></div>
+			  <div class="seat" data-tooltip="라-8"></div>
+			  <div class="seat" data-tooltip="라-9"></div>
+        <div class="seat" data-tooltip="라-10"></div>
+        <div class="seat" data-tooltip="라-11"></div>
+        <div class="seat" data-tooltip="라-12"></div>
+        <div class="seat" data-tooltip="라-13"></div>
+        <div class="seat" data-tooltip="라-14"></div>
+        <div class="seat" data-tooltip="라-15"></div>
+        <div class="seat" data-tooltip="라-16"></div>
+        <div class="seat" data-tooltip="라-17"></div>
+        <div class="seat" data-tooltip="라-18"></div>
+        <div class="seat" data-tooltip="라-19"></div>
+        <div class="seat" data-tooltip="라-20"></div>
+        <div class="seat" data-tooltip="라-21"></div>
+        <div class="seat" data-tooltip="라-22"></div>
+        <div class="seat" data-tooltip="라-23"></div>
+        <div class="seat" data-tooltip="라-24"></div>
+        <div class="seat" data-tooltip="라-25"></div>
+			  <div class="seat" data-tooltip="라-26"></div>
+				<div class="row__seat_alpha" data-tooltip="empty"></div>
+      </div>
+      <div class="row">
+        <div class="row__seat_alpha" data-tooltip="empty"></div>
+				<div class="seat sold" data-tooltip="마-1"></div>
+        <div class="seat sold" data-tooltip="마-2"></div>
+        <div class="seat sold" data-tooltip="마-3"></div>
+        <div class="seat" data-tooltip="마-4"></div>
+        <div class="seat" data-tooltip="마-5"></div>
+        <div class="seat" data-tooltip="마-6"></div>
+        <div class="seat" data-tooltip="마-7"></div>
+			  <div class="seat" data-tooltip="마-8"></div>
+			  <div class="seat" data-tooltip="마-9"></div>
+        <div class="seat" data-tooltip="마-10"></div>
+        <div class="seat" data-tooltip="마-11"></div>
+        <div class="seat" data-tooltip="마-12"></div>
+        <div class="seat" data-tooltip="마-13"></div>
+        <div class="seat" data-tooltip="마-14"></div>
+        <div class="seat" data-tooltip="마-15"></div>
+        <div class="seat" data-tooltip="마-16"></div>
+        <div class="seat" data-tooltip="마-17"></div>
+        <div class="seat" data-tooltip="마-18"></div>
+        <div class="seat" data-tooltip="마-19"></div>
+        <div class="seat" data-tooltip="마-20"></div>
+        <div class="seat" data-tooltip="마-21"></div>
+        <div class="seat" data-tooltip="마-22"></div>
+        <div class="seat" data-tooltip="마-23"></div>
+        <div class="seat" data-tooltip="마-24"></div>
+        <div class="seat" data-tooltip="마-25"></div>
+			  <div class="seat" data-tooltip="마-26"></div>
+				<div class="row__seat_alpha" data-tooltip="empty"></div>
+      </div>
+      <div class="row">
+        <div class="seat" data-tooltip="바-1"></div>
+        <div class="seat" data-tooltip="바-2"></div>
+        <div class="seat" data-tooltip="바-3"></div>
+        <div class="seat" data-tooltip="바-4"></div>
+        <div class="seat" data-tooltip="바-5"></div>
+        <div class="seat" data-tooltip="바-6"></div>
+        <div class="seat" data-tooltip="바-7"></div>
+			  <div class="seat" data-tooltip="바-8"></div>
+			  <div class="seat" data-tooltip="바-9"></div>
+        <div class="seat" data-tooltip="바-10"></div>
+        <div class="seat" data-tooltip="바-11"></div>
+        <div class="seat" data-tooltip="바-12"></div>
+        <div class="seat" data-tooltip="바-13"></div>
+        <div class="seat" data-tooltip="바-14"></div>
+        <div class="seat" data-tooltip="바-15"></div>
+        <div class="seat" data-tooltip="바-16"></div>
+        <div class="seat" data-tooltip="바-17"></div>
+        <div class="seat" data-tooltip="바-18"></div>
+        <div class="seat" data-tooltip="바-19"></div>
+        <div class="seat" data-tooltip="바-20"></div>
+        <div class="seat" data-tooltip="바-21"></div>
+        <div class="seat" data-tooltip="바-22"></div>
+        <div class="seat" data-tooltip="바-23"></div>
+        <div class="seat" data-tooltip="바-24"></div>
+        <div class="seat" data-tooltip="바-25"></div>
+        <div class="seat" data-tooltip="바-26"></div>
+        <div class="seat" data-tooltip="바-27"></div>
+        <div class="seat" data-tooltip="바-28"></div>
+      </div>
+      <div class="row">
+        <div class="seat" data-tooltip="사-1"></div>
+        <div class="seat" data-tooltip="사-2"></div>
+        <div class="seat" data-tooltip="사-3"></div>
+        <div class="seat" data-tooltip="사-4"></div>
+        <div class="seat" data-tooltip="사-5"></div>
+        <div class="seat" data-tooltip="사-6"></div>
+        <div class="seat" data-tooltip="사-7"></div>
+			  <div class="seat" data-tooltip="사-8"></div>
+			  <div class="seat" data-tooltip="사-9"></div>
+        <div class="seat" data-tooltip="사-10"></div>
+        <div class="seat" data-tooltip="사-11"></div>
+        <div class="seat" data-tooltip="사-12"></div>
+        <div class="seat" data-tooltip="사-13"></div>
+        <div class="seat" data-tooltip="사-14"></div>
+        <div class="seat" data-tooltip="사-15"></div>
+        <div class="seat" data-tooltip="사-16"></div>
+        <div class="seat" data-tooltip="사-17"></div>
+        <div class="seat" data-tooltip="사-18"></div>
+        <div class="seat" data-tooltip="사-19"></div>
+        <div class="seat" data-tooltip="사-20"></div>
+        <div class="seat" data-tooltip="사-21"></div>
+        <div class="seat" data-tooltip="사-22"></div>
+        <div class="seat" data-tooltip="사-23"></div>
+        <div class="seat" data-tooltip="사-24"></div>
+        <div class="seat" data-tooltip="사-25"></div>
+        <div class="seat" data-tooltip="사-26"></div>
+        <div class="seat" data-tooltip="사-27"></div>
+        <div class="seat" data-tooltip="사-28"></div>
+      </div>
+      <div class="row">
+        <div class="seat" data-tooltip="아-1"></div>
+        <div class="seat" data-tooltip="아-2"></div>
+        <div class="seat" data-tooltip="아-3"></div>
+        <div class="seat" data-tooltip="아-4"></div>
+        <div class="seat" data-tooltip="아-5"></div>
+        <div class="seat" data-tooltip="아-6"></div>
+        <div class="seat" data-tooltip="아-7"></div>
+			  <div class="seat" data-tooltip="아-8"></div>
+			  <div class="seat" data-tooltip="아-9"></div>
+        <div class="seat" data-tooltip="아-10"></div>
+        <div class="seat" data-tooltip="아-11"></div>
+        <div class="seat" data-tooltip="아-12"></div>
+        <div class="seat" data-tooltip="아-13"></div>
+        <div class="seat" data-tooltip="아-14"></div>
+        <div class="seat" data-tooltip="아-15"></div>
+        <div class="seat" data-tooltip="아-16"></div>
+        <div class="seat" data-tooltip="아-17"></div>
+        <div class="seat" data-tooltip="아-18"></div>
+        <div class="seat" data-tooltip="아-19"></div>
+        <div class="seat" data-tooltip="아-20"></div>
+        <div class="seat" data-tooltip="아-21"></div>
+        <div class="seat" data-tooltip="아-22"></div>
+        <div class="seat" data-tooltip="아-23"></div>
+        <div class="seat" data-tooltip="아-24"></div>
+        <div class="seat" data-tooltip="아-25"></div>
+        <div class="seat sold" data-tooltip="아-26"></div>
+        <div class="seat sold" data-tooltip="아-27"></div>
+        <div class="seat sold" data-tooltip="아-28"></div>
+      </div>
+    </div>
+   <a href="reservation.html">
+      <input type="button" id="tlqkf"  value="예매하기">
+    </a>
+    <p class="text">
+      You have selected <span id="count">0</span> seat for a price of RS.<span
+        id="total"
+        >0</span
+      >
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
